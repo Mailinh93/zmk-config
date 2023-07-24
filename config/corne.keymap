@@ -92,10 +92,10 @@
 
     base {
       bindings = <
-&none  &kp Q  &kp W   &kp F      &kp P     &kp B      &kp J          &kp L      &kp U    &kp Y   &kp SQT  &none
-&none  &kp A  &kp S   &kp R      &kp T     &kp G      &kp M          &kp N      &kp E    &kp I     &kp O  &none
-&none  &kp Z  &kp X   &kp C      &kp D     &kp V      &kp K          &kp H  &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &tog 1  &kp SPACE  &kp CAPS    &kp RET  &kp BACKSPACE     &tog 2
+&none  &kp Q  &kp W  &kp F      &kp P     &kp B      &kp J          &kp L      &kp U    &kp Y   &kp SQT  &none
+&none  &kp A  &kp S  &kp R      &kp T     &kp G      &kp M          &kp N      &kp E    &kp I     &kp O  &none
+&none  &kp Z  &kp X  &kp C      &kp D     &kp V      &kp K          &kp H  &kp COMMA  &kp DOT  &kp FSLH  &none
+                     &to 1  &kp SPACE  &kp CAPS    &kp RET  &kp BACKSPACE      &to 2
       >;
     };
 
@@ -104,7 +104,7 @@
 &none  &kp LG(Q)  &kp LG(W)     &kp UP  &kp LG(T)  &kp MINUS        &kp AT_SIGN        &kp N7        &kp N8        &kp N9   &kp N0  &none
 &none    &kp ESC   &kp LEFT   &kp DOWN  &kp RIGHT  &kp LG(K)       &kp QUESTION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SQT  &none
 &none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp EXCLAMATION  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DQT  &none
-                                &tog 0    &kp F11    &kp F12             &kp F4       &kp F10        &tog 2
+                                 &to 0    &kp F11    &kp F12             &kp F4       &kp F10         &to 2
       >;
     };
 
@@ -113,7 +113,7 @@
 &none     &kp EXCL      &kp AT          &kp HASH    &kp DLLR          &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &none
 &none        &none  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &kp K_VOLUME_UP    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &none
 &none  &kp K_SLEEP  &kp K_LOCK             &none  &kp K_MUTE  &kp K_VOLUME_DOWN    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &none
-                                           &none       &none             &tog 0       &tog 1  &kp TILDE            &none
+                                           &none       &none              &to 0        &to 1  &kp TILDE            &none
       >;
     };
 
@@ -122,7 +122,7 @@
 &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0    &bt BT_SEL 3           &trans           &trans  &trans           &trans    &rgb_ug RGB_COLOR_HSB(0,60,50)
 &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1    &bt BT_SEL 4        &kp LS(K)  &kp KP_NUMBER_1   &kp N            &kp G  &rgb_ug RGB_COLOR_HSB(120,60,50)
 &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 2      &bt BT_CLR            &kp K            &kp U   &kp B  &kp KP_NUMBER_0  &rgb_ug RGB_COLOR_HSB(240,60,50)
-                        &trans  &trans        &trans       &kp ENTER  &kp EXCLAMATION           &trans
+                        &trans  &trans         &to 0       &kp ENTER  &kp EXCLAMATION           &trans
       >;
     };
   };
